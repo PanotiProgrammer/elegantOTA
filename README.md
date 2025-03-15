@@ -80,6 +80,9 @@ const char* password = "your_PASSWORD"; // Replace with your Wi-Fi password
 ### 5. Convert .ino to .bin for OTA Updates
 1. Open your sketch (e.g., `elegantsetup.ino`) in the Arduino IDE.
 2. Go to **Sketch > Export Compiled Binary** to generate a `.bin` file.
+
+![image](https://github.com/user-attachments/assets/9a29d71c-33ad-4340-9cea-1d7db615d24e)
+
 3. Note the location of the generated `.bin` file.
 
 ### 6. Perform OTA Updates
@@ -88,6 +91,9 @@ const char* password = "your_PASSWORD"; // Replace with your Wi-Fi password
 3. On the ElegantOTA web interface:
    - Click the "Choose File" button and select the `.bin` file you generated.
    - Click "Upload" to start the OTA update process.
+![image](https://github.com/user-attachments/assets/fc7f54c7-746e-4404-bd3f-40a5c3f994f5)
+![image](https://github.com/user-attachments/assets/0a26c573-1a5f-443c-a4f6-a2ddd96d7a7f)
+
 4. The ESP8266 will receive the new firmware and reboot automatically.
 
 ### Additional Example: Blink Light
