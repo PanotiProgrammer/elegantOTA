@@ -41,6 +41,17 @@ Before diving in, make sure you have the following:
 - **Wi-Fi Network** with internet access.
 - **SSID and Password** of your Wi-Fi network (to connect the ESP8266).
 
+### **Enabling Async Mode**
+For the ElegantOTA library to work in async mode (with the ESPAsyncWebServer library), follow these steps:
+
+1. Go to your Arduino libraries directory.
+2. Open the **ElegantOTA** folder and then open the **src** folder.
+3. Locate the `ELEGANTOTA_USE_ASYNC_WEBSERVER` macro in the `ElegantOTA.h` file, and set it to `1` as follows:
+   ```cpp
+   #define ELEGANTOTA_USE_ASYNC_WEBSERVER 1
+![image](https://github.com/user-attachments/assets/e8c9c7b9-2894-4828-933a-68bc46955b71)
+
+
 ---
 
 ## 🚀 Getting Started
@@ -70,7 +81,7 @@ Upload new sketches wirelessly—no cables needed!
 
 ---
 
-📝 Notes
+## 📝 Notes
 Initial Serial Upload: The first firmware upload must be done via a serial connection to enable OTA functionality. 
 Sketch Size Limitation: Ensure your compiled sketch size does not exceed 50% of the ESP8266's flash memory to leave room for OTA updates.
 
@@ -78,10 +89,10 @@ For advanced configurations and more details, check out the ESP8266 Arduino Core
 
 ---
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it as you see fit. See the LICENSE file for full details.
 
 ---
 
-💡 Contributing
+## 💡 Contributing
 Contributions are welcome! If you have ideas for improvements or find any issues, please open an issue or submit a pull request. Let's make this project even better together!
