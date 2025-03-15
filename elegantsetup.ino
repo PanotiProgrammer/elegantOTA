@@ -7,8 +7,8 @@
 #include <ESPAsyncWebServer.h>
 #include <ElegantOTA.h>
 
-const char* ssid = "Sharmas5G";      // Replace with your WiFi SSID
-const char* password = "12345678";  // Replace with your WiFi password
+const char* ssid = "your_SSID";      // Replace with your Wi-Fi SSID
+const char* password = "your_PASSWORD"; // Replace with your Wi-Fi password
 
 AsyncWebServer server(80);  // Create web server instance on port 80
 
