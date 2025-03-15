@@ -72,14 +72,31 @@ const char* ssid = "your_SSID";      // Replace with your Wi-Fi SSID
 const char* password = "your_PASSWORD"; // Replace with your Wi-Fi password
 ```
 ### 4. Upload the Sketch via Serial
-Connect your ESP8266 to your computer using a USB-to-serial adapter. Select the appropriate board and port in the Arduino IDE. Upload the sketch to your ESP8266.
+1. Connect your ESP8266 to your computer using a USB-to-serial adapter.
+2. In the Arduino IDE, select the appropriate board (e.g., NodeMCU 1.0) under **Tools > Board**.
+3. Select the correct port under **Tools > Port**.
+4. Upload the `elegantsetup.ino` sketch to your ESP8266.
 
-### 5. Perform OTA Updates
-After the initial upload, your ESP8266 will connect to your Wi-Fi network.
+### 5. Convert .ino to .bin for OTA Updates
+1. Open your sketch (e.g., `elegantsetup.ino`) in the Arduino IDE.
+2. Go to **Sketch > Export Compiled Binary** to generate a `.bin` file.
+3. Note the location of the generated `.bin` file.
 
-In the Arduino IDE, go to Tools > Port and select the network port corresponding to your device (e.g., esp8266-[IP address]).
+### 6. Perform OTA Updates
+1. After the initial upload, your ESP8266 will connect to your Wi-Fi network.
+2. Open a web browser and navigate to `http://<ESP8266_IP>/update`, replacing `<ESP8266_IP>` with the actual IP address of your ESP8266.
+3. On the ElegantOTA web interface:
+   - Click the "Choose File" button and select the `.bin` file you generated.
+   - Click "Upload" to start the OTA update process.
+4. The ESP8266 will receive the new firmware and reboot automatically.
 
-Upload new sketches wirelessly—no cables needed!
+### Additional Example: Blink Light
+1. Open the `blinklight.ino` file in the Arduino IDE.
+2. Follow the same steps to upload this sketch via serial or OTA.
+
+### Repository Files Overview
+- **blinklight.ino**: A simple example to blink an LED using the ESP8266.
+- **elegantsetup.ino**: The main setup file to configure the ESP8266 as a server for OTA updates.
 
 ---
 
