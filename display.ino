@@ -1,3 +1,7 @@
+// This code sets up an ESP8266 to connect to a Wi-Fi network and creates 
+// an asynchronous web server for over-the-air (OTA) updates using the ElegantOTA library. 
+// It provides a web interface at the /update endpoint for uploading new 
+// firmware and displays a simple homepage with a link to the OTA update page.
 #include <ESP8266WiFi.h>
 #include <ESPAsyncTCP.h>
 #include <ESPAsyncWebServer.h>
