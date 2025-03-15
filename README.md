@@ -58,9 +58,11 @@ For the ElegantOTA library to work in async mode (with the ESPAsyncWebServer lib
 
 ### 1. Clone the Repository
 Start by cloning this repository to your local machine:
-
+```bash
+git clone https://github.com/PanotiProgrammer/elegantOTA.git
+```
 ### 2. Open the Sketch
-Open the ota_basic.ino file in the Arduino IDE.
+Open the elegantsetup.ino file in the Arduino IDE.
 
 ### 3. Configure Wi-Fi Credentials
 Replace the placeholders with your Wi-Fi network's SSID and password:
