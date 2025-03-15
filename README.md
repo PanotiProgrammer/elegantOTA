@@ -18,12 +18,28 @@ Whether you're building smart home devices, IoT sensors, or just experimenting w
 
 Before diving in, make sure you have the following:
 
-- **Hardware:**
-  - ESP8266 development board (e.g., NodeMCU, Wemos D1 Mini).
-  - LED and resistor (optional, for the blink example).
-- **Software:**
-  - Arduino IDE installed.
-  - ESP8266 board package installed in the Arduino IDE.
+### **Hardware:**
+- **ESP8266 Development Board** (e.g., NodeMCU, Wemos D1 Mini).
+- **Micro-USB Cable** (for power and serial communication).
+- **LED and Resistor** (optional, for testing or blink example).
+- **Breadboard and Jumper Wires** (optional, for prototyping).
+
+### **Software:**
+- **Arduino IDE** (installed on your computer).
+- **ESP8266 Board Package** (installed in the Arduino IDE).
+  - To install, go to **File > Preferences** and add the following URL to the "Additional Boards Manager URLs" field:
+    ```
+    http://arduino.esp8266.com/stable/package_esp8266com_index.json
+    ```
+  - Then, go to **Tools > Board > Boards Manager**, search for "ESP8266," and install the package.
+- **Required Libraries** (installed via the Arduino IDE Library Manager):
+  - **ElegantOTA** (for OTA updates).
+  - **ESPAsyncTCP** (for asynchronous TCP functionality).
+  - **ESPAsyncWebServer** (for asynchronous web server functionality).
+
+### **Network Requirements:**
+- **Wi-Fi Network** with internet access.
+- **SSID and Password** of your Wi-Fi network (to connect the ESP8266).
 
 ---
 
@@ -52,15 +68,20 @@ In the Arduino IDE, go to Tools > Port and select the network port corresponding
 
 Upload new sketches wirelessly—no cables needed!
 
-📝 Notes
-Initial Serial Upload: The first firmware upload must be done via a serial connection to enable OTA functionality.
+---
 
+📝 Notes
+Initial Serial Upload: The first firmware upload must be done via a serial connection to enable OTA functionality. 
 Sketch Size Limitation: Ensure your compiled sketch size does not exceed 50% of the ESP8266's flash memory to leave room for OTA updates.
 
 For advanced configurations and more details, check out the ESP8266 Arduino Core Documentation.
 
+---
+
 📜 License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it as you see fit. See the LICENSE file for full details.
+
+---
 
 💡 Contributing
 Contributions are welcome! If you have ideas for improvements or find any issues, please open an issue or submit a pull request. Let's make this project even better together!
