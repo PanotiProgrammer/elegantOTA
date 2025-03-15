@@ -41,7 +41,7 @@ Replace the placeholders with your Wi-Fi network's SSID and password:
 ```bash
 const char* ssid = "your_SSID";      // Replace with your Wi-Fi SSID
 const char* password = "your_PASSWORD"; // Replace with your Wi-Fi password
-
+```
 ### 4. Upload the Sketch via Serial
 Connect your ESP8266 to your computer using a USB-to-serial adapter. Select the appropriate board and port in the Arduino IDE. Upload the sketch to your ESP8266.
 
