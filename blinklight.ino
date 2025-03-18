@@ -1,3 +1,5 @@
+//Insert your WiFi SSID and Password in the below given fields and then export 
+//Export its binary file using arduino and upload it on the OTA website
 ///Blinking Light Example
 
 #include <Arduino.h>
